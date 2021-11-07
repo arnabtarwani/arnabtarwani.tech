@@ -12,7 +12,7 @@ const AppHomeContent = () => {
 
     return (
         <>
-            <div className="flex justify-center items-start my-10 max-w-full">
+            <div className="flex justify-between items-start my-10 max-w-full">
                 <div className="flex flex-col justify-start mr-10 w-2/3">
                     <div className="flex flex-col justify-start items-start text-center">
                         <PageHeader title="Arnab Tarwani" subHeading={subHeading} />
@@ -23,7 +23,7 @@ const AppHomeContent = () => {
                     <div className="mt-5">Catch me somewhere else:</div>
                     <SocialLinks />
                 </div>
-                <div className="mt-4 flex justify-center m-auto rounded-full items-center">
+                <div className="mt-4 flex justify-start rounded-full items-center">
                     <Image src={HeaderImage} width={150} height={150} className="rounded-full" />
                 </div>
             </div>
