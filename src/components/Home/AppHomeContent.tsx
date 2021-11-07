@@ -13,7 +13,7 @@ const AppHomeContent = () => {
     return (
         <>
             <div className="flex justify-center items-start my-10 max-w-full">
-                <div className="flex flex-col justify-start mr-10">
+                <div className="flex flex-col justify-start mr-10 w-2/3">
                     <div className="flex flex-col justify-start items-start text-center">
                         <PageHeader title="Arnab Tarwani" subHeading={subHeading} />
                     </div>
