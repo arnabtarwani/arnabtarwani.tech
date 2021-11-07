@@ -5,7 +5,7 @@ const brandColor = "#4c14bb";
 
 module.exports = {
     mode: "jit",
-    darkMode: "media",
+    darkMode: "class",
     purge: ["./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
@@ -77,6 +77,8 @@ module.exports = {
                 112: "42rem",
                 116: "46rem",
                 120: "50rem",
+                124: "54rem",
+                128: "58rem",
             },
             letterSpacing: {
                 tighter: "-.01em",
@@ -100,8 +102,8 @@ module.exports = {
             fontFamily: {
                 sans: [
                     "inter-font",
-                    "roobert-font",
                     "custom-font",
+                    "roobert-font",
                     "BlinkMacSystemFont",
                     "-apple-system",
                     "Segoe UI",

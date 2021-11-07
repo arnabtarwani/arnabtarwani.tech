@@ -15,7 +15,7 @@ const BlogHome: React.FC<BlogHomeProps> = (props) => {
     return (
         <>
             <HomeLayout>
-                <NavBar />
+                
             </HomeLayout>
         </>
     )

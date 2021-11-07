@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogHome from '~/components/Blog/BlogHome'
+import ProjectsHome from '~/components/Projects/ProjectsHome'
 
 interface ProjectsProps {
     children?: React.ReactNode
@@ -11,7 +11,7 @@ const projects: React.FC<ProjectsProps> = (props) => {
 
     return (
         <>
-            <BlogHome />
+            <ProjectsHome />
         </>
     )
 }

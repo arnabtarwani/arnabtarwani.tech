@@ -1,19 +1,24 @@
 import React, { useState } from 'react'
 import { ActiveLink } from '~/ui/ActiveLink/ActiveLink'
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi"
+import { DarkModeToggle } from '~/ui/DarkModeToggle/DarkModeToggle'
 
 
 interface NavBarProps {
-
+    darkMode: boolean
+    updateTheme: Function
 }
 
-const NavBar: React.FC<NavBarProps> = () => {
+const NavBar: React.FC<NavBarProps> = (props) => {
 
-    const [darkMode, setDarkMode] = useState(false)
+    const { darkMode, updateTheme } = props
+
+    console.log(darkMode);
+    
 
     return (
         <>
-            <div className="flex justify-between items-center w-full">
+            <div className="flex justify-between items-center">
                 <div className="flex justify-start items-center">
                     <ActiveLink className="mr-3" link="/">
                         Home
@@ -25,9 +30,7 @@ const NavBar: React.FC<NavBarProps> = () => {
                         Blog
                     </ActiveLink>
                 </div>
-                <div className="flex justify-end items-center rounded bg-gray-600 p-2">
-                    {darkMode ? <HiOutlineSun size={20} /> : <HiOutlineMoon size={20} />}
-                </div>
+                <DarkModeToggle darkMode={darkMode} updateTheme={updateTheme} />
             </div>
         </>
     )

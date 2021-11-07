@@ -23,7 +23,7 @@ export const ActiveLink = React.forwardRef<HTMLAnchorElement, ActiveLinkProps>((
     return (
         <>
             <div className="flex flex-col group justify-between">
-                <a href={link} onClick={handleClick} className={clsx("flex items-center justify-center px-2.5 py-1.5 rounded dark:hover:text-gray-100 dark:hover:bg-gray-600 hover:bg-gray-600", router.asPath === link ? 'bg-gray-600 dark:bg-gray-600 text-gray-100' : 'bg-transparent', className)}>
+                <a href={link} onClick={handleClick} className={clsx("flex items-center justify-center px-2.5 py-1.5 text-gray-400 rounded dark:hover:text-gray-300 dark:hover:bg-gray-600 hover:bg-gray-200 hover:text-gray-500 ", router.asPath === link ? 'bg-gray-200 dark:bg-gray-600 dark:text-gray-100 text-gray-800 hover:text-gray-400 dark:hover:text-gray-100' : 'bg-transparent', className)}>
                     {children}
                 </a>
                 {/* {tooltipText && <div className="absolute left-0 items-center hidden ml-14 mt-3 group-hover:flex z-50">

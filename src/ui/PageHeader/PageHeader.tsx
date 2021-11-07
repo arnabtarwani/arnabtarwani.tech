@@ -16,8 +16,8 @@ export const PageHeader: React.FC<PageHeaderProps> = (props) => {
     return (
         <>
             <div className={clsx("flex flex-col justify-start items-start", className)}>
-                <span className={clsx("text-4xl font-bold", styleHeading)}>{title}</span>
-                <span className={clsx("mt-1 text-base font-normal", styleSubHeading)}>{subHeading}</span>
+                <span className={clsx("text-6xl font-extrabold", styleHeading)}>{title}</span>
+                <span className={clsx("-mt-2 text-base font-normal", styleSubHeading)}>{subHeading}</span>
             </div>
         </>
     )

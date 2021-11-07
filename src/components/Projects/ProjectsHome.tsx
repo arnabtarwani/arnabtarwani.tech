@@ -1,23 +1,25 @@
 import React from 'react'
 import HomeLayout from '~/layouts/HomeLayout'
-import AppHomeContent from './AppHomeContent'
+import NavBar from '../Navigation/NavBar'
 
-interface AppHome {
+
+interface ProjectsHomeProps {
     chidren?: React.ReactNode
     className?: string
 }
 
-const AppHome: React.FC<AppHome> = (props) => {
+const ProjectsHome: React.FC<ProjectsHomeProps> = (props) => {
 
     const { children, className } = props
 
     return (
         <>
             <HomeLayout>
-                <AppHomeContent />
+
             </HomeLayout>
         </>
     )
 }
 
-export default AppHome
+export default ProjectsHome
+
