@@ -1,4 +1,5 @@
 import React from 'react'
+import ComingSoon from '~/layouts/ComingSoon'
 import HomeLayout from '~/layouts/HomeLayout'
 import NavBar from '../Navigation/NavBar'
 
@@ -14,9 +15,7 @@ const BlogHome: React.FC<BlogHomeProps> = (props) => {
 
     return (
         <>
-            <HomeLayout>
-                
-            </HomeLayout>
+            <ComingSoon />
         </>
     )
 }
